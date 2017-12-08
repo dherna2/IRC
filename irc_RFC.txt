@@ -1,0 +1,431 @@
+CS494                                                   David Hernandez
+Internet Draft                                                      PSU
+Intended status:  IRC Class Project                    December 7, 2017
+Expires: January 2018
+
+
+
+                             IRC Class Project
+                        draft-irc-pdx-cs494-00.txt
+
+
+Status of this Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79. This document may not be modified,
+   and derivative works of it may not be created, except to publish it
+   as an RFC and to translate it into languages other than English.
+
+   This document may contain material from IETF Documents or IETF
+   Contributions published or made publicly available before November
+   10, 2008. The person(s) controlling the copyright in some of this
+   material may not have granted the IETF Trust the right to allow
+   modifications of such material outside the IETF Standards Process.
+   Without obtaining an adequate license from the person(s) controlling
+   the copyright in such materials, this document may not be modified
+   outside the IETF Standards Process, and derivative works of it may
+   not be created outside the IETF Standards Process, except to format
+   it for publication as an RFC or to translate it into languages other
+   than English.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF), its areas, and its working groups.  Note that
+   other groups may also distribute working documents as Internet-
+   Drafts.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   The list of current Internet-Drafts can be accessed at
+   http://www.ietf.org/ietf/1id-abstracts.txt
+
+   The list of Internet-Draft Shadow Directories can be accessed at
+   http://www.ietf.org/shadow.html
+
+   This Internet-Draft will expire on June 7, 2009.
+
+
+
+
+Hernandez              Expires January 7, 2018                 [Page 1]
+
+Internet-Draft              <IRC Project>                 December 2017
+
+
+Copyright Notice
+
+   Copyright (c) 2017 IETF Trust and the persons identified as the
+   document authors. All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (http://trustee.ietf.org/license-info) in effect on the date of
+   publication of this document. Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.
+
+Abstract
+
+   IRC Class Project assignment where the goal is to have written a RFC
+   (this one) and to implement an IRC program.
+
+Table of Contents
+
+
+   1. Introduction...................................................3
+   2. Conventions used in this document..............................3
+   3. IRC Progams....................................................3
+      3.1. Getting Started................Error! Bookmark not defined.
+      3.2. Client.........................Error! Bookmark not defined.
+         3.2.1 <Sub-section 2.1.1 heading as appropriate>............4
+         3.1.2. <Sub-section 2.1.2 heading as appropriate>...........4
+            3.1.2.1. <2.1.2.1 (L4)>..................................4
+               3.1.2.1.1. <(L5)>.....................................4
+                  3.1.2.1.1.1. <(L6)>................................4
+                     3.1.2.1.1.1.1. <(L7)>...........................4
+                        3.1.2.1.1.1.1.1. <(L8)>......................4
+                           3.1.2.1.1.1.1.1.1. <(L9)>.................4
+   4. <Section 3 heading as appropriate>.............................4
+   5. <Section 4 heading as appropriate>.............................4
+   6. Formal Syntax..................................................5
+   7. Security Considerations........................................5
+   8. IANA Considerations............................................5
+   9. Conclusions....................................................5
+   10. References....................................................5
+      10.1. Normative References.....................................5
+      10.2. Informative References...................................5
+   11. Acknowledgments...............................................6
+   Appendix A. <First Appendix>......................................7
+      A.1. <First Header level>......................................7
+      A.2. <Second Header level 1>...................................7
+         A.2.1. <H2>.................................................7
+
+
+Hernandez              Expires January 7, 2018                 [Page 2]
+
+Internet-Draft              <IRC Project>                 December 2017
+
+
+            A.2.1.1. <H3>............................................7
+               A.2.1.1.1. <H4>.......................................7
+                  A.2.1.1.1.1. <H5>..................................7
+
+1. Introduction
+
+   IRC or Internet Relay Chat is an application that lets multiple users
+   communicate via text messages with each other in common "virtual"
+   rooms. The IRC client and server will be built from scratch using
+   python as the choice of implementation. The network protocol used by
+   this program is TCP.
+
+   Basic Functionality:
+
+   o  Create a room
+
+   o  Join a room
+
+   o  Leave a room
+
+   o  List the available rooms
+
+2. Conventions used in this document
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+   document are to be interpreted as described in RFC 2119 [RFC2119].
+
+   In this document, these words will appear with that interpretation
+   only when in ALL CAPS. Lower case uses of these words are not to be
+   interpreted as carrying significance described in RFC 2119.
+
+   In this document, the characters ">>" preceding an indented line(s)
+   indicates a statement using the key words listed above. This
+   convention aids reviewers in quickly identifying or finding the
+   portions of this RFC covered by these keywords.
+
+3. IRC Program
+
+   This section will go over the main program and its various features.
+   Note these programs were hardcoded to be running on the same machine.
+
+3.1. Getting Started
+
+   You can either double click the TCPServerd.py if on a linux system or
+   open a terminal window and type 'python TCPServerd.py' but you must
+
+
+
+Hernandez              Expires January 7, 2018                 [Page 3]
+
+Internet-Draft              <IRC Project>                 December 2017
+
+
+   start the TCPServerd.py first before starting the TCPClientd.py on
+   the same computer.
+
+3.2. Client
+
+   The client connects to the server (both same machine) using a common
+   IRC port 6667 and a localhost which normally maps to 127.0.0.1
+
+3.2.1. <Sub-section 2.1.2 heading as appropriate>
+
+   <Text for this section>
+
+3.2.1.1. <2.1.2.1 (L4)>
+
+   <Text for this section>
+
+3.2.1.1.1. <(L5)>
+
+   <Text for this section>
+
+3.2.1.1.1.1. <(L6)>
+
+   <Text for this section>
+
+3.2.1.1.1.1.1. <(L7)>
+
+   <Text for this section>
+
+3.2.1.1.1.1.1.1. <(L8)>
+
+   <Text for this section>
+
+3.2.1.1.1.1.1.1.1. <(L9)>
+
+   <Text for this section>
+
+4. <Section 3 heading as appropriate>
+
+   <Text for this section>
+
+5. <Section 4 heading as appropriate>
+
+   <Text for this section>
+
+
+
+
+
+
+Hernandez              Expires January 7, 2018                 [Page 4]
+
+Internet-Draft              <IRC Project>                 December 2017
+
+
+6. Formal Syntax
+
+   The following syntax specification uses the augmented Backus-Naur
+   Form (BNF) as described in RFC-2234 [RFC2234].
+
+   <Define your formal syntax here.>
+
+7. Security Considerations
+
+   No security was considered at all.
+
+8. IANA Considerations
+
+   None
+
+9. Conclusions
+
+   Program is incomplete
+
+10. References
+
+10.1. Normative References
+
+   [1]   Bradner, S., "Key words for use in RFCs to Indicate Requirement
+         Levels", BCP 14, RFC 2119, March 1997.
+
+   [2]   Crocker, D. and Overell, P.(Editors), "Augmented BNF for Syntax
+         Specifications: ABNF", RFC 2234, Internet Mail Consortium and
+         Demon Internet Ltd., November 1997.
+
+   [RFC2119] Bradner, S., "Key words for use in RFCs to Indicate
+             Requirement Levels", BCP 14, RFC 2119, March 1997.
+
+   [RFC2234] Crocker, D. and Overell, P.(Editors), "Augmented BNF for
+             Syntax Specifications: ABNF", RFC 2234, Internet Mail
+             Consortium and Demon Internet Ltd., November 1997.
+
+10.2. Informative References
+
+   [3]   Faber, T., Touch, J. and W. Yue, "The TIME-WAIT state in TCP
+         and Its Effect on Busy Servers", Proc. Infocom 1999 pp. 1573-
+         1583.
+
+   [Fab1999] Faber, T., Touch, J. and W. Yue, "The TIME-WAIT state in
+             TCP and Its Effect on Busy Servers", Proc. Infocom 1999 pp.
+             1573-1583.
+
+
+
+Hernandez              Expires January 7, 2018                 [Page 5]
+
+Internet-Draft              <IRC Project>                 December 2017
+
+
+11. Acknowledgments
+
+   This document was prepared using 2-Word-v2.0.template.dot.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hernandez              Expires January 7, 2018                 [Page 6]
+
+Internet-Draft              <IRC Project>                 December 2017
+
+
+Appendix A.                 <First Appendix>
+
+
+
+A.1. <First Header level>
+
+   <Text>
+
+A.2. <Second Header level 1>
+
+   Copyright (c) 2017 IETF Trust and the persons identified as authors
+   of the code. All rights reserved.
+
+   Redistribution and use in source and binary forms, with or without
+   modification, is permitted pursuant to, and subject to the license
+   terms contained in, the Simplified BSD License set forth in Section
+   4.c of the IETF Trust's Legal Provisions Relating to IETF Documents
+   (http://trustee.ietf.org/license-info).
+
+A.2.1. <H2>
+
+   <Text>
+
+A.2.1.1. <H3>
+
+   <Text>
+
+A.2.1.1.1. <H4>
+
+   <Text>
+
+A.2.1.1.1.1. <H5>
+
+   <Text>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hernandez              Expires January 7, 2018                 [Page 7]
+
+Internet-Draft              <IRC Project>                 December 2017
+
+
+Authors' Addresses
+
+   David Hernandez
+   PSU Student
+   Portland State University
+   Computer Science
+   PO Box 751
+   Portland OR 97207
+
+   Email: dhern2@pdx.edu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hernandez              Expires January 7, 2018                 [Page 8]
+
